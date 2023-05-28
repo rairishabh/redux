@@ -1,0 +1,18 @@
+.buttonstyle {
+  flex-grow: 1;
+  margin: 18px 22px;
+  padding: 10px;
+  border: none;
+  background: #090b40;
+  font-size: 19px;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+.buttonstyle:hover {
+  background: white;
+  color: #090b40;
+  border: 2px solid #090b40;
+}
