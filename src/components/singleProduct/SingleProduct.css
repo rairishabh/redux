@@ -1,6 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@500&family=Pacifico&display=swap");
 .singleProduct {
-  border-radius: 8px;
-  box-shadow: 1px 1px 9px 0px;
+  box-shadow: 0px 0px 4px -2px;
 }
 
 .productImg {
@@ -30,4 +30,9 @@
   align-items: center;
   font-size: 3rem;
   cursor: pointer;
+}
+
+.productTitle {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
 }

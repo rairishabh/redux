@@ -1,9 +1,14 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./cart.css";
-import { addToCart, removeFromCart } from "../../redux/slices/cartSlice";
+import {
+  addToCart,
+  removeFromCart,
+  removeAll,
+} from "../../redux/slices/cartSlice";
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
+import { RiDeleteBin6Fill } from "react-icons/ri";
 import card from "../../images/card.png";
 
 function Cart() {
@@ -69,6 +74,18 @@ function Cart() {
                     }}
                     // onClick={dispatch(addToCart(item))}
                     onClick={() => dispatch(addToCart(item))}
+                  />
+                  <RiDeleteBin6Fill
+                    style={{
+                      fontSize: "30px",
+                      color: "#a3a3a3",
+                      margin: "5px",
+                      cursor: "pointer",
+                    }}
+                    // onClick={dispatch(addToCart(item))}
+                    onClick={() => {
+                      dispatch(removeAll(item));
+                    }}
                   />
                 </div>
               </div>

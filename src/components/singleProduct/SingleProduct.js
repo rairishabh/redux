@@ -1,7 +1,7 @@
 import React from "react";
 import "./SingleProduct.css";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, removeFromCart } from "../../redux/slices/cartSlice";
+import { addToCart } from "../../redux/slices/cartSlice";
 import { Link } from "react-router-dom";
 import Button from "../Buttons/Button";
 import { ToastContainer, toast } from "react-toastify";
@@ -16,7 +16,6 @@ function SingleProduct({ product }) {
   // console.log("curr", curQuantity);
   return (
     <div className="singleProduct">
-      <ToastContainer />
       <Link to={`/products/${product.id}`} style={{ textDecoration: "none" }}>
         <img
           src={product.images[0]}
@@ -44,13 +43,15 @@ function SingleProduct({ product }) {
       <div
         onClick={() => {
           dispatch(addToCart(product));
-          toast.success("🚀Item added to cart 🛒", {
-            position: "top-center",
-            autoClose: 5000,
+          toast("🚀Item added to cart 🛒", {
+            position: "top-right",
+            autoClose: 2000,
           });
         }}
+        style={{ border: "none" }}
       >
         <Button text={"Add To Cart"} />
+        <ToastContainer />
       </div>
     </div>
   );

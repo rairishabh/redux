@@ -33,7 +33,7 @@ function ProductList() {
           <img src={banner1} alt="" />
         </div>
         <div className="imgDiv discount">50% Discount</div>
-        <div className="imgDiv title">On all latest fashion trends</div>
+        <div className="imgDiv title">On all latest fashion and trends</div>
         <div className="imgDiv"></div>
         <div className="imgDiv img-6">
           <img src={banner2} alt="" />

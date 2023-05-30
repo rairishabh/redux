@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@500&family=Pacifico&display=swap");
 .bannerImg {
   display: grid;
   background-color: #fbdaff;
@@ -10,9 +10,6 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-/* .imgDiv {
-  background-color: aqua;
-} */
 .img-1 {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -26,16 +23,14 @@
   text-align: center;
   line-height: 174px;
   color: #ff9900;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Pacifico", cursive;
+  font-family: "Dancing Script", cursive;
 }
 .discount {
   font-size: 48px;
   text-align: center;
   line-height: 174px;
   color: #ff9900;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Pacifico", cursive;
+  font-family: "Dancing Script", cursive;
 }
 .img-6 {
   grid-row-start: 2;
@@ -47,11 +42,17 @@
 }
 
 .productList {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  /* display: grid;
   gap: 42px;
-  padding: 54px;
   box-shadow: 0px 0px 6px 0px;
+  padding-left: 150px;
+  padding-right: 150px; */
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(4, 305px);
+  gap: 42px;
+  box-shadow: 0px 0px 6px 0px;
+  padding-top: 100px;
 }
 
 .productTitle {
